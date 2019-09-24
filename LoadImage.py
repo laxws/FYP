@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 
-img1 = cv2.imread('noise.jpg', cv2.IMREAD_COLOR)
+img1 = cv2.imread('pcb1.jpg', cv2.IMREAD_COLOR)
 img2 = cv2.imread('pcb2_pinhole.jpg', cv2.IMREAD_COLOR)
 
 # convert both images to grayscale
@@ -26,3 +26,5 @@ cv2.imshow("bit_not2", bit_not2)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+#testing ni
