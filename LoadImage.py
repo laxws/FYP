@@ -3,8 +3,8 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 
-img1 = cv2.imread('pcb1.jpg', cv2.IMREAD_COLOR)
-img2 = cv2.imread('pcb2_pinhole.jpg', cv2.IMREAD_COLOR)
+img1 = cv2.imread('Images/PCB/pcb1.jpg', cv2.IMREAD_COLOR)
+img2 = cv2.imread('Images/PCB/pcb1_shortckt.jpg', cv2.IMREAD_COLOR)
 
 # convert both images to grayscale
 grayA = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
