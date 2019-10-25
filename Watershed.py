@@ -62,15 +62,15 @@ th1[markersA == -1] = [255,0,0]
 
 markersA = cv.watershed(th2,markersB)
 th2[markersB == -1] = [255,0,0]
-'''
+
 cv.imshow('Master', th1)
 cv.imshow('Referential', th2)
 '''
 grayA = cv.cvtColor(th1, cv.COLOR_BGR2GRAY)
 grayB = cv.cvtColor(th2, cv.COLOR_BGR2GRAY)
-'''
+
 retval2,th1 = cv.threshold(grayA,125,255,cv.THRESH_BINARY+cv.THRESH_OTSU)
-retval2,th2 = cv.threshold(grayB,125,255,cv.THRESH_BINARY+cv.THRESH_OTSU)'''
+retval2,th2 = cv.threshold(grayB,125,255,cv.THRESH_BINARY+cv.THRESH_OTSU)
 
 #th1 = cv.fastNlMeansDenoising(th1,None,10,7,21)
 #th2 = cv.fastNlMeansDenoising(th2,None,10,7,21)
@@ -91,7 +91,7 @@ cv.imshow("bit_xor", bit_xor)
 #cv.imshow("bit_not", bit_not)
 #cv.imshow("bit_not2", bit_not2)
 cv.imshow("denoised", denoised)
-
+'''
 cv.waitKey(0)
 cv.destroyAllWindows()
 
