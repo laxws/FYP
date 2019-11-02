@@ -2,8 +2,8 @@ import numpy as np
 import cv2 as cv
 from matplotlib import pyplot as plt
 
-th1 = cv.imread('Images/PCB/pcb2.jpg')
-th2 = cv.imread('Images/PCB/pcb2_missingpinhole.jpg')
+th1 = cv.imread('Images/PCB/pcb3.jpg')
+th2 = cv.imread('Images/PCB/pcb3_missingpinhole.jpg')
 grayA = cv.cvtColor(th1,cv.COLOR_BGR2GRAY)
 grayB = cv.cvtColor(th2,cv.COLOR_BGR2GRAY)
 ret, threshA = cv.threshold(grayA,0,255,cv.THRESH_BINARY_INV+cv.THRESH_OTSU)
