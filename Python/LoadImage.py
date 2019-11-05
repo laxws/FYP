@@ -3,8 +3,8 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 
-imgA = cv2.imread('Images/Results Watershed/pcb3master.jpg', cv2.IMREAD_COLOR)
-imgB = cv2.imread('Images/Results Watershed/pcb3missingpinhole.jpg', cv2.IMREAD_COLOR)
+imgA = cv2.imread('Images/PCB/pcb1.jpg', cv2.IMREAD_COLOR)
+imgB = cv2.imread('Images/PCB/pcb1_missingpinhole.jpg', cv2.IMREAD_COLOR)
 
 # convert both images to grayscale
 img1 = cv2.cvtColor(imgA, cv2.COLOR_BGR2GRAY)
@@ -27,7 +27,7 @@ cv2.imshow("bit_xor", bit_xor)
 #cv2.imshow("bit_not2", bit_not2)
 cv2.imshow("denoised", denoised)
 
-#cv2.imwrite("xor3_missingpinhole.jpg", denoised)
+#cv2.imwrite("xor1_shortckt.jpg", denoised)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
