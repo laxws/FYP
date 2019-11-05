@@ -27,7 +27,7 @@ cv2.imshow("bit_xor", bit_xor)
 #cv2.imshow("bit_not2", bit_not2)
 cv2.imshow("denoised", denoised)
 
-cv2.imwrite("xor3_missingpinhole.jpg", denoised)
+#cv2.imwrite("xor3_missingpinhole.jpg", denoised)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
