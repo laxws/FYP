@@ -1,3 +1,5 @@
+import timeit
+load_image = """
 # load image from dataset
 import cv2
 import numpy as np
@@ -31,3 +33,6 @@ cv2.imshow("denoised", denoised)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+"""
+elapsed_time = timeit.timeit(load_image, number=1)/1
+print(elapsed_time)
